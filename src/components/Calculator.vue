@@ -82,8 +82,8 @@ export default {
     },
     equal() {
       this.curr = `${this.operator(
-        parseFloat(this.curr),
-        parseFloat(this.previous)
+        parseFloat(this.previous),
+        parseFloat(this.curr)
       )}`;
       this.previous = null;
     }
